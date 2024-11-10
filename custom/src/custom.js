@@ -8,11 +8,11 @@ let startingsheildup = prompt("Starting Field");
 let csheild = startingsheildup ? startingsheildup.toLowerCase() : "";
 
 if (clevel !== "initial") {
-  console.log(`level.onLevel('${clevel}');`);
+  level.onLevel = clevel;
 }
 if (cweapon !== "") {
-  console.log(`b.giveGuns('${cweapon}');`);
+  b.giveGuns = cweapon;
 }
 if (csheild !== "") {
-  console.log(`m.setField('${csheild}');`);
+  m.setField = csheild;
 }
