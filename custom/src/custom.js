@@ -5,8 +5,8 @@ if (clevel !== "initial") {
   level.onLevel = clevel;
 }
 if (cweapon !== "") {
-  b.giveGuns = cweapon;
+  b.giveGuns(cweapon);
 }
 if (csheild !== "") {
-  m.setField = csheild;
+  m.setField(csheild);
 }
