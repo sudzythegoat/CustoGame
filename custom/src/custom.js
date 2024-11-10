@@ -1,12 +1,6 @@
-let levelupper = prompt("What level would you like to start on?");
-let clevel = levelupper ? levelupper.toLowerCase() : "initial";
-
-let startingtechup = prompt("Starting Weapon");
-let cweapon = startingtechup ? startingtechup.toLowerCase() : "";
-
-let startingsheildup = prompt("Starting Field");
-let csheild = startingsheildup ? startingsheildup.toLowerCase() : "";
-
+let clevel = prompt("What level would you like to start on?");
+let cweapon = prompt("Starting Weapon");
+let csheild = prompt("Starting Field");
 if (clevel !== "initial") {
   level.onLevel = clevel;
 }
