@@ -9,7 +9,7 @@ let startingtechup = prompt("Starting Weapon")
 let startingtech = startingtechup.toLowerCase();
 if (startingtech !== null) {
   let cweapon = "";
-} else if (level) {
+} else if (startingtech) {
   let cweapon = startingtech;
 }
 let startingsheildup = prompt("Starting Field")
@@ -19,4 +19,12 @@ if (startingsheild !== null) {
 } else if (startingsheild) {
   let csheild = startingsheild;
 }
-function main
+if (clevel !== "") {
+  level.onLevel(clevel);
+}
+if (cweapon !== "") {
+  b.giveGuns(cweapon);
+}
+if (csheild !== "") {
+  m.setField(csheild);
+}
